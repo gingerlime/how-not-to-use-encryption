@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>How NOT to use Encryption</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="/usr/local/lib/python2.7/dist-packages/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="/usr/local/lib/python2.7/dist-packages/landslide/themes/default/js/slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>How NOT to use Encryption</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Encryption is cool</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>But... DDIY + DRITH</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Example</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>'Share' link to a website</h2>
+</li>
+<li>
+<h2>Access is normally password protected</h2>
+</li>
+<li>
+<h2>We want to give (limited) access to non-users</h2>
+</li>
+<li>
+<h2>non-user = no password (or user...)</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Website Access</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>Normal access: http://bla.com/report/xyz/</h2>
+</li>
+<li>
+<h2>Shared access via: <br/>http://bla.com/<font color="red">share</font>/report/xyz/<font color="red">kutfuauLw61xx3dTFXjw</font></h2>
+</li>
+<li>
+<h2>is this secure?</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>It depends...</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>More info...</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>Requirement 1: Do NOT store extra stuff in the database</h2>
+</li>
+<li>
+<h2>Requirement 2: Only allow existing users to generate a shared link</h2>
+</li>
+<li>
+<h2>Requirement 3: Shared link expires after 24 hours</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Solution Option 0</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>Use SSL</h2>
+</li>
+<li>
+<h2>http://bla.com/report/xyz/ =&gt; <font color="red">https</font>://bla.com/...</h2>
+</li>
+<li>
+<h2>is this secure?</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Solution option 1</h1></header>
+            
+            
+            <section><h2>share link</h2>
+<ul>
+<li>Generate a timestamp</li>
+<li>Encrypt timestamp =&gt; token</li>
+<li>append token to url</li>
+</ul>
+<h2>verify link</h2>
+<ul>
+<li>decrypt token</li>
+<li>verify timestamp</li>
+<li>if (now - timestamp) &lt; 24 hours, allow access</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Solution option 1</h1></header>
+            
+            
+            <section><h2>http://bla.com/share/report/xyz/<font color="red">kutfuauLw61xx3dTFXjw</font></h2>
+<h2>(Decrypt) =&gt; http://bla.com/share/report/xyz/<font color="red">1323864246</font></h2>
+<p><br/>
+<br/>
+<br/>
+<br/></p>
+<h2>verify_link.py</h2>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="n">timestamp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">decrypt</span><span class="p">(</span><span class="n">token</span><span class="p">))</span> <span class="c"># 1323875734</span>
+<span class="lineno">4</span> <span class="n">now</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">())</span>
+<span class="lineno">5</span> 
+<span class="lineno">6</span> <span class="k">if</span> <span class="n">now</span> <span class="o">-</span> <span class="n">timestamp</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">):</span>
+<span class="lineno">7</span>     <span class="k">return</span> <span class="bp">True</span>
+<span class="lineno">8</span> <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What's wrong with this picture?</h1></header>
+            
+            
+            <section><p><img alt="" src="whats_wrong.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What's wrong with this picture?</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>http://bla.com/share/report/<font color="red">xyz</font>/kutfuauLw61xx3dTFXjw</h2>
+</li>
+<li>
+<h2>http://bla.com/share/report/<font color="red">abc</font>/kutfuauLw61xx3dTFXjw</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What's wrong with this picture?</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>http://bla.com/share/report/xyz/<font color="red">kutfuauLw61xx3dTFXjw</font></h2>
+</li>
+<li>
+<h4>http://bla.com/share/report/xyz/<font color="red">kutfuauLw61xx3dTFXjwkutfuauLw61xx3dTFXjw</font></h4>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>How can we fix this?</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>encrypt the entire path? (share/report/xyz/{timestamp})</h2>
+</li>
+<li>
+<h2>check the length of the encrypted string?</h2>
+</li>
+<li>
+<h2>Hide the timestamp between lots of noise?</h2>
+</li>
+<li>
+<h2>Add a salt / initialization-vector (IV)?</h2>
+</li>
+<li>
+<h2>Use RSA/AES/Blowfish?</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Maybe we're using the wrong approach?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Encryption does not prevent or detect modification</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>DON'T USE ENCRYPTION</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>How can you tell?</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>Only Encrypt when there is a secret</h2>
+</li>
+<li>
+<h2>If there is no secret, there is no need for encryption</h2>
+</li>
+<li>
+<h2>timestamp is NOT a secret</h2>
+</li>
+<li>
+<h2>URL path is NOT a secret</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Solution Option 2</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>We need to validate/authenticate the request, not hide it</h2>
+</li>
+<li>
+<h2>We need to detect or prevent modification</h2>
+</li>
+<li>
+<h2>We need a secure 'signature' (e.g. HMAC, Oauth)</h2>
+</li>
+<li>
+<h2>Don't re-invent the wheel</h2>
+</li>
+<li>
+<h2>Try to use a protocol rather than an algorithm or a cryptographic primitive (SHA1 &lt; HMAC-SHA1 &lt; OAUTH)</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Coming next</h1></header>
+            
+            
+            <section><ul>
+<li>
+<h2>What is a cryptographic hash function and what can you do with it?</h2>
+</li>
+<li>
+<h2>What makes crypto hashes secure?</h2>
+</li>
+<li>
+<h2>What are collisions and do they really hurt?</h2>
+</li>
+<li>
+<h2>How to turn your <font color="red">hash</font> into <font color="red">cash</font>? or how to become rich in 21 days?</h2>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: tesobe_talk1.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>That's it.</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="tesobe_talk1.md">tesobe_talk1.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">How NOT to use Encryption</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Encryption is cool</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">But... DDIY + DRITH</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Example</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Website Access</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">It depends...</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">More info...</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Solution Option 0</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Solution option 1</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Solution option 1</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">What's wrong with this picture?</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">What's wrong with this picture?</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">What's wrong with this picture?</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">How can we fix this?</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Maybe we're using the wrong approach?</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Encryption does not prevent or detect modification</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">DON'T USE ENCRYPTION</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">How can you tell?</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">Solution Option 2</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">Coming next</a></th>
+        <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">That's it.</a></th>
+        <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
